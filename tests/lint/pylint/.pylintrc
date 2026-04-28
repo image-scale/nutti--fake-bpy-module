@@ -1,0 +1,26 @@
+[MASTER]
+
+disable=
+    C0111,
+    C0302,
+    W0223,
+    W0511,
+    E0110,
+    C0415,  # Covered by Ruff PLC0415.
+
+variable-rgx=[a-zA-Z_][a-zA-Z0-9_]{0,40}$
+argument-rgx=[a-z_][a-z0-9_]{0,40}$
+attr-rgx=[a-z_][a-z0-9_]{0,40}$
+max-statements=150
+max-branches=50
+min-public-methods=0
+max-public-methods=30
+max-locals=30
+max-returns=10
+max-attributes=10
+max-bool-expr=20
+
+ignore-paths=tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/*,
+             tests/python/fake_bpy_module_test/fake_bpy_module_test/integration_test_data/*,
+
+init-hook='import sys; sys.path.append("./src")'

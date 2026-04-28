@@ -1,0 +1,224 @@
+<document source="<string>">
+    <source-filename>
+        option_rna_based.rst
+    <module>
+        <name>
+            bpy.types
+        <description>
+    <function function_type="function">
+        <name>
+            function_1
+        <description>
+        <argument-list>
+            <argument argument_type="arg">
+                <name>
+                    arg_optional
+                <description>
+                    function_1 arg_optional description
+                <default-value>
+                <data-type-list>
+                    <data-type>
+                        int (optional)
+            <argument argument_type="arg">
+                <name>
+                    arg_readonly
+                <description>
+                    function_1 arg_readonly description
+                <default-value>
+                <data-type-list>
+                    <data-type>
+                        int (readonly)
+            <argument argument_type="arg">
+                <name>
+                    arg_never_none
+                <description>
+                    function_1 arg_never_none description
+                <default-value>
+                <data-type-list>
+                    <data-type>
+                        int (never none)
+        <return>
+            <description>
+            <data-type-list>
+    <function function_type="function">
+        <name>
+            function_2
+        <description>
+        <argument-list>
+            <argument argument_type="arg">
+                <name>
+                    arg_1
+                <description>
+                    function_2 arg_1 description
+                <default-value>
+                <data-type-list>
+                    <data-type>
+                        int (optional, readonly, never none)
+        <return>
+            <description>
+            <data-type-list>
+    <class>
+        <name>
+            ClassA
+        <description>
+        <base-class-list>
+        <attribute-list>
+            <attribute>
+                <name>
+                    active_attr
+                <description>
+                <data-type-list>
+                    <data-type>
+                        int
+        <function-list>
+    <class>
+        <name>
+            ClassB
+        <description>
+        <base-class-list>
+        <attribute-list>
+        <function-list>
+    <class>
+        <name>
+            ID
+        <description>
+        <base-class-list>
+        <attribute-list>
+            <attribute>
+                <name>
+                    library
+                <description>
+                <data-type-list>
+                    <data-type>
+                        int
+        <function-list>
+            <function function_type="method">
+                <name>
+                    draw_handler_add
+                <description>
+                <argument-list>
+                    <argument argument_type="arg">
+                        <name>
+                            arg_1
+                        <description>
+                            draw_handler_add arg_1 description
+                        <default-value>
+                        <data-type-list>
+                            <data-type>
+                                str
+                <return>
+                    <description>
+                    <data-type-list>
+            <function function_type="method">
+                <name>
+                    function_1
+                <description>
+                <argument-list>
+                    <argument argument_type="arg">
+                        <name>
+                            arg_1
+                        <description>
+                            function_1 arg_1 description
+                        <default-value>
+                        <data-type-list>
+                            <data-type>
+                                str
+                <return>
+                    <description>
+                    <data-type-list>
+    <data>
+        <name>
+            active_data
+        <description>
+        <data-type-list>
+            <data-type>
+                int
+    <data>
+        <name>
+            collection_property_1
+        <description>
+        <data-type-list>
+            <data-type>
+                <class-ref>
+                    bpy_prop_collection
+                 of 
+                <class-ref>
+                    RefinedClassA
+    <data>
+        <name>
+            collection_property_2
+        <description>
+        <data-type-list>
+            <data-type>
+                <class-ref>
+                    bpy_prop_array
+                [int]
+    <data>
+        <name>
+            collection_property_3
+        <description>
+        <data-type-list>
+            <data-type>
+                <class-ref>
+                    RefinedClassA
+                [
+                <class-ref>
+                    RefinedClassB
+                ]
+    <function function_type="function">
+        <name>
+            option_description_function_1
+        <description>
+        <argument-list>
+            <argument argument_type="arg">
+                <name>
+                    arg_1
+                <description>
+                    option_description_function_1 arg_1 description (optional, readonly, never None)
+                <default-value>
+                <data-type-list>
+                    <data-type>
+                        int
+        <return>
+            <description>
+            <data-type-list>
+    <data>
+        <name>
+            option_description_data_1
+        <description>
+            option_description_data_1 description (never none, readonly)
+        <data-type-list>
+            <data-type>
+                int
+    <class>
+        <name>
+            ClassA
+        <description>
+        <base-class-list>
+        <attribute-list>
+            <attribute>
+                <name>
+                    option_description_attr_1
+                <description>
+                    option_description_attr_1 description (never None, readonly)
+                <data-type-list>
+                    <data-type>
+                        float
+        <function-list>
+            <function function_type="method">
+                <name>
+                    option_description_method_1
+                <description>
+                <argument-list>
+                    <argument argument_type="arg">
+                        <name>
+                            arg_1
+                        <description>
+                            option_description_method_1 arg_1 description (optional)
+                        <default-value>
+                        <data-type-list>
+                            <data-type>
+                                int
+                <return>
+                    <description>
+                    <data-type-list>

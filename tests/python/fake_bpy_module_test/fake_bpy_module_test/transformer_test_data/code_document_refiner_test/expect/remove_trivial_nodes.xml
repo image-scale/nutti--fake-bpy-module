@@ -1,0 +1,79 @@
+<document source="<string>">
+    <source-filename>
+        remove_trivial_nodes.rst
+    <module>
+        <name>
+            module_1
+        <description>
+    <data>
+        <name>
+            DATA_1
+        <description>
+            DATA_1 description
+        <data-type-list>
+            <data-type>
+                DATA_1 type
+    <paragraph>
+        Some descriptions 1
+    <paragraph>
+        Inherited Functions
+    <paragraph>
+        <bullet_list bullet="*">
+            <list_item>
+                <paragraph>
+                    To be removed
+    <paragraph>
+        Some descriptions 2
+    <paragraph>
+        Inherited Properties
+    <paragraph>
+        <bullet_list bullet="*">
+            <list_item>
+                <paragraph>
+                    To be removed
+    <paragraph>
+        Some descriptions 3
+    <paragraph>
+        References
+    <paragraph>
+        <bullet_list bullet="*">
+            <list_item>
+                <paragraph>
+                    To be removed
+            <list_item>
+                <paragraph>
+                    <class-ref>
+                        bpy_struct.id_data
+        :columns: 2
+    <paragraph>
+        Some descriptions 4
+    <section ids="inherited-functions" names="inherited\ functions">
+        <title>
+            Inherited Functions
+        <paragraph>
+            <bullet_list bullet="*">
+                <list_item>
+                    <paragraph>
+                        To be removed
+        <paragraph>
+            Some descriptions 5
+    <section ids="inherited-properties" names="inherited\ properties">
+        <title>
+            Inherited Properties
+        <paragraph>
+            <bullet_list bullet="*">
+                <list_item>
+                    <paragraph>
+                        To be removed
+        <paragraph>
+            Some descriptions 6
+    <section ids="references" names="references">
+        <title>
+            References
+        <paragraph>
+            <bullet_list bullet="*">
+                <list_item>
+                    <paragraph>
+                        To be removed
+        <paragraph>
+            Some descriptions 7

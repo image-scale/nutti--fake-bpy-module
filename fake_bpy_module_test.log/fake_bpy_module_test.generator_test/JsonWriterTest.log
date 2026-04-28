@@ -1,0 +1,1325 @@
+========== Test: fake_bpy_module_test.generator_test.JsonWriterTest.test_children ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/json_writer_test/expect/children/module_1.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": [
+            "submodule_1"
+        ]
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "data",
+        "name": "DATA_1",
+        "description": "DATA_1 description",
+        "data_types": [
+            {
+                "data_type": "submodule_1.ClassA",
+                "options": {}
+            }
+        ],
+        "options": {}
+    }
+]
+============= Actual: fake_bpy_module_test_tmp/json_writer_test_output.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": [
+            "submodule_1"
+        ]
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "data",
+        "name": "DATA_1",
+        "description": "DATA_1 description",
+        "data_types": [
+            {
+                "data_type": "submodule_1.ClassA",
+                "options": {}
+            }
+        ],
+        "options": {}
+    }
+]
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/json_writer_test/expect/children/module_1.submodule_1.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    }
+]
+============= Actual: fake_bpy_module_test_tmp/json_writer_test_output.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    }
+]
+========== Test: fake_bpy_module_test.generator_test.JsonWriterTest.test_class ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/json_writer_test/expect/class/class.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "class",
+        "name": "ClassA",
+        "description": "ClassA description",
+        "base_classes": [],
+        "attributes": [
+            {
+                "name": "attr_1",
+                "description": "attr_1 description",
+                "data_types": [
+                    {
+                        "data_type": "float",
+                        "options": {}
+                    }
+                ],
+                "options": {}
+            },
+            {
+                "name": "data_1",
+                "description": "data_1 description",
+                "data_types": [
+                    {
+                        "data_type": "int",
+                        "options": {}
+                    }
+                ],
+                "options": {}
+            }
+        ],
+        "methods": [
+            {
+                "name": "method_1",
+                "description": "method_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "method_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "float",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "method_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "str",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": "\"test\""
+                    }
+                ],
+                "return": {
+                    "description": "method_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "str",
+                            "options": {}
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "method"
+                }
+            },
+            {
+                "name": "classmethod_1",
+                "description": "classmethod_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "classmethod_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "float",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "classmethod_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "int",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": "123"
+                    }
+                ],
+                "return": {
+                    "description": "classmethod_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "str",
+                            "options": {}
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "classmethod"
+                }
+            },
+            {
+                "name": "staticmethod_1",
+                "description": "staticmethod_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "staticmethod_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "float",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "staticmethod_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "tuple",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": "(0, 0)"
+                    }
+                ],
+                "return": {
+                    "description": "staticmethod_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "str",
+                            "options": {}
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "staticmethod"
+                }
+            },
+            {
+                "name": "function_1",
+                "description": "function_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "function_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "float",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "function_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "int",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    }
+                ],
+                "return": {
+                    "description": "function_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "str",
+                            "options": {
+                                "option": "accept none"
+                            }
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "function",
+                    "option": "overload"
+                }
+            }
+        ],
+        "options": {}
+    },
+    {
+        "type": "class",
+        "name": "ClassB",
+        "description": "ClassB description",
+        "base_classes": [],
+        "attributes": [
+            {
+                "name": "attr_1",
+                "description": "attr_1 description",
+                "data_types": [
+                    {
+                        "data_type": "_GenericType1",
+                        "options": {}
+                    }
+                ],
+                "options": {}
+            }
+        ],
+        "methods": [
+            {
+                "name": "method_1",
+                "description": "method_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "method_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "_GenericType1",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "method_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "_GenericType2",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    }
+                ],
+                "return": {
+                    "description": "method_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "_GenericType2",
+                            "options": {}
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "method",
+                    "generic-types": "_GenericType2"
+                }
+            }
+        ],
+        "options": {
+            "generic-types": "_GenericType1"
+        }
+    }
+]
+============= Actual: fake_bpy_module_test_tmp/json_writer_test_output.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "class",
+        "name": "ClassA",
+        "description": "ClassA description",
+        "base_classes": [],
+        "attributes": [
+            {
+                "name": "attr_1",
+                "description": "attr_1 description",
+                "data_types": [
+                    {
+                        "data_type": "float",
+                        "options": {}
+                    }
+                ],
+                "options": {}
+            },
+            {
+                "name": "data_1",
+                "description": "data_1 description",
+                "data_types": [
+                    {
+                        "data_type": "int",
+                        "options": {}
+                    }
+                ],
+                "options": {}
+            }
+        ],
+        "methods": [
+            {
+                "name": "method_1",
+                "description": "method_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "method_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "float",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "method_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "str",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": "\"test\""
+                    }
+                ],
+                "return": {
+                    "description": "method_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "str",
+                            "options": {}
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "method"
+                }
+            },
+            {
+                "name": "classmethod_1",
+                "description": "classmethod_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "classmethod_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "float",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "classmethod_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "int",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": "123"
+                    }
+                ],
+                "return": {
+                    "description": "classmethod_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "str",
+                            "options": {}
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "classmethod"
+                }
+            },
+            {
+                "name": "staticmethod_1",
+                "description": "staticmethod_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "staticmethod_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "float",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "staticmethod_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "tuple",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": "(0, 0)"
+                    }
+                ],
+                "return": {
+                    "description": "staticmethod_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "str",
+                            "options": {}
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "staticmethod"
+                }
+            },
+            {
+                "name": "function_1",
+                "description": "function_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "function_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "float",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "function_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "int",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    }
+                ],
+                "return": {
+                    "description": "function_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "str",
+                            "options": {
+                                "option": "accept none"
+                            }
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "function",
+                    "option": "overload"
+                }
+            }
+        ],
+        "options": {}
+    },
+    {
+        "type": "class",
+        "name": "ClassB",
+        "description": "ClassB description",
+        "base_classes": [],
+        "attributes": [
+            {
+                "name": "attr_1",
+                "description": "attr_1 description",
+                "data_types": [
+                    {
+                        "data_type": "_GenericType1",
+                        "options": {}
+                    }
+                ],
+                "options": {}
+            }
+        ],
+        "methods": [
+            {
+                "name": "method_1",
+                "description": "method_1 description",
+                "arguments": [
+                    {
+                        "name": "arg_1",
+                        "description": "method_1 arg_1 description",
+                        "data_types": [
+                            {
+                                "data_type": "_GenericType1",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    },
+                    {
+                        "name": "arg_2",
+                        "description": "method_1 arg_2 description",
+                        "data_types": [
+                            {
+                                "data_type": "_GenericType2",
+                                "options": {}
+                            }
+                        ],
+                        "default_value": ""
+                    }
+                ],
+                "return": {
+                    "description": "method_1 return description",
+                    "data_types": [
+                        {
+                            "data_type": "_GenericType2",
+                            "options": {}
+                        }
+                    ]
+                },
+                "options": {
+                    "function_type": "method",
+                    "generic-types": "_GenericType2"
+                }
+            }
+        ],
+        "options": {
+            "generic-types": "_GenericType1"
+        }
+    }
+]
+========== Test: fake_bpy_module_test.generator_test.JsonWriterTest.test_data ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/json_writer_test/expect/data/data.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "data",
+        "name": "DATA_1",
+        "description": "DATA_1 description",
+        "data_types": [
+            {
+                "data_type": "int",
+                "options": {}
+            }
+        ],
+        "options": {}
+    }
+]
+============= Actual: fake_bpy_module_test_tmp/json_writer_test_output.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "data",
+        "name": "DATA_1",
+        "description": "DATA_1 description",
+        "data_types": [
+            {
+                "data_type": "int",
+                "options": {}
+            }
+        ],
+        "options": {}
+    }
+]
+========== Test: fake_bpy_module_test.generator_test.JsonWriterTest.test_dependencies ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/json_writer_test/expect/dependencies/dependencies.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": [
+            "module_2"
+        ]
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "data",
+        "name": "DATA_1",
+        "description": "DATA_1 description",
+        "data_types": [
+            {
+                "data_type": "module_2.ClassA",
+                "options": {}
+            }
+        ],
+        "options": {}
+    }
+]
+============= Actual: fake_bpy_module_test_tmp/json_writer_test_output.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": [
+            "module_2"
+        ]
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "data",
+        "name": "DATA_1",
+        "description": "DATA_1 description",
+        "data_types": [
+            {
+                "data_type": "module_2.ClassA",
+                "options": {}
+            }
+        ],
+        "options": {}
+    }
+]
+========== Test: fake_bpy_module_test.generator_test.JsonWriterTest.test_deprecated ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/json_writer_test/expect/deprecated/deprecated.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "function",
+        "name": "function_1",
+        "description": "",
+        "arguments": [
+            {
+                "name": "arg_1",
+                "description": "",
+                "data_types": [],
+                "default_value": ""
+            }
+        ],
+        "return": {
+            "description": "",
+            "data_types": []
+        },
+        "options": {
+            "function_type": "function",
+            "deprecated": "(Deprecated)"
+        }
+    },
+    {
+        "type": "data",
+        "name": "DATA_1",
+        "description": "",
+        "data_types": [],
+        "options": {
+            "deprecated": "(Deprecated)"
+        }
+    }
+]
+============= Actual: fake_bpy_module_test_tmp/json_writer_test_output.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "function",
+        "name": "function_1",
+        "description": "",
+        "arguments": [
+            {
+                "name": "arg_1",
+                "description": "",
+                "data_types": [],
+                "default_value": ""
+            }
+        ],
+        "return": {
+            "description": "",
+            "data_types": []
+        },
+        "options": {
+            "function_type": "function",
+            "deprecated": "(Deprecated)"
+        }
+    },
+    {
+        "type": "data",
+        "name": "DATA_1",
+        "description": "",
+        "data_types": [],
+        "options": {
+            "deprecated": "(Deprecated)"
+        }
+    }
+]
+========== Test: fake_bpy_module_test.generator_test.JsonWriterTest.test_enum ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/json_writer_test/expect/enum/enum.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "enum",
+        "name": "EnumA",
+        "description": "EnumA description",
+        "enum_items": [
+            {
+                "name": "ENUM_ITEM_1",
+                "description": "ENUM_ITEM_1 description",
+                "options": {}
+            }
+        ],
+        "options": {}
+    }
+]
+============= Actual: fake_bpy_module_test_tmp/json_writer_test_output.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "enum",
+        "name": "EnumA",
+        "description": "EnumA description",
+        "enum_items": [
+            {
+                "name": "ENUM_ITEM_1",
+                "description": "ENUM_ITEM_1 description",
+                "options": {}
+            }
+        ],
+        "options": {}
+    }
+]
+========== Test: fake_bpy_module_test.generator_test.JsonWriterTest.test_function ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/json_writer_test/expect/function/function.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "function",
+        "name": "function_1",
+        "description": "function_1 description",
+        "arguments": [
+            {
+                "name": "arg_1",
+                "description": "function_1 arg_1 description",
+                "data_types": [
+                    {
+                        "data_type": "float",
+                        "options": {}
+                    }
+                ],
+                "default_value": ""
+            },
+            {
+                "name": "arg_2",
+                "description": "function_1 arg_2 description",
+                "data_types": [
+                    {
+                        "data_type": "str",
+                        "options": {}
+                    }
+                ],
+                "default_value": "\"test\""
+            },
+            {
+                "name": "arg_3",
+                "description": "function_1 arg_3 description",
+                "data_types": [
+                    {
+                        "data_type": "int",
+                        "options": {}
+                    }
+                ],
+                "default_value": "1234"
+            }
+        ],
+        "return": {
+            "description": "function_1 return description",
+            "data_types": [
+                {
+                    "data_type": "str",
+                    "options": {}
+                }
+            ]
+        },
+        "options": {
+            "function_type": "function"
+        }
+    },
+    {
+        "type": "function",
+        "name": "function_2",
+        "description": "",
+        "arguments": [],
+        "return": {
+            "description": "function_2 return description",
+            "data_types": [
+                {
+                    "data_type": "str",
+                    "options": {
+                        "option": "accept none"
+                    }
+                }
+            ]
+        },
+        "options": {
+            "function_type": "function"
+        }
+    },
+    {
+        "type": "function",
+        "name": "function_3",
+        "description": "",
+        "arguments": [],
+        "return": {
+            "description": "function_3 return description",
+            "data_types": [
+                {
+                    "data_type": "_GenericType1",
+                    "options": {}
+                }
+            ]
+        },
+        "options": {
+            "function_type": "function",
+            "generic-types": "_GenericType1"
+        }
+    }
+]
+============= Actual: fake_bpy_module_test_tmp/json_writer_test_output.json =============
+[
+    {
+        "type": "code-document",
+        "contents": ""
+    },
+    {
+        "type": "external-depended-modules",
+        "contents": [
+            "typing",
+            "collections.abc",
+            "typing_extensions",
+            "numpy.typing"
+        ]
+    },
+    {
+        "type": "internal-depended-modules",
+        "contents": []
+    },
+    {
+        "type": "child-modules",
+        "contents": []
+    },
+    {
+        "type": "code",
+        "contents": []
+    },
+    {
+        "type": "function",
+        "name": "function_1",
+        "description": "function_1 description",
+        "arguments": [
+            {
+                "name": "arg_1",
+                "description": "function_1 arg_1 description",
+                "data_types": [
+                    {
+                        "data_type": "float",
+                        "options": {}
+                    }
+                ],
+                "default_value": ""
+            },
+            {
+                "name": "arg_2",
+                "description": "function_1 arg_2 description",
+                "data_types": [
+                    {
+                        "data_type": "str",
+                        "options": {}
+                    }
+                ],
+                "default_value": "\"test\""
+            },
+            {
+                "name": "arg_3",
+                "description": "function_1 arg_3 description",
+                "data_types": [
+                    {
+                        "data_type": "int",
+                        "options": {}
+                    }
+                ],
+                "default_value": "1234"
+            }
+        ],
+        "return": {
+            "description": "function_1 return description",
+            "data_types": [
+                {
+                    "data_type": "str",
+                    "options": {}
+                }
+            ]
+        },
+        "options": {
+            "function_type": "function"
+        }
+    },
+    {
+        "type": "function",
+        "name": "function_2",
+        "description": "",
+        "arguments": [],
+        "return": {
+            "description": "function_2 return description",
+            "data_types": [
+                {
+                    "data_type": "str",
+                    "options": {
+                        "option": "accept none"
+                    }
+                }
+            ]
+        },
+        "options": {
+            "function_type": "function"
+        }
+    },
+    {
+        "type": "function",
+        "name": "function_3",
+        "description": "",
+        "arguments": [],
+        "return": {
+            "description": "function_3 return description",
+            "data_types": [
+                {
+                    "data_type": "_GenericType1",
+                    "options": {}
+                }
+            ]
+        },
+        "options": {
+            "function_type": "function",
+            "generic-types": "_GenericType1"
+        }
+    }
+]

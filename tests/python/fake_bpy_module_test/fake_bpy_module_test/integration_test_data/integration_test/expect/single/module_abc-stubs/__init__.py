@@ -1,0 +1,17 @@
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+
+class Class123:
+    """Class123 description"""
+
+    attr_1: float = None
+    """ attr_1 description"""
+
+    def method_1(self) -> int:
+        """method_1 description
+
+        :return: method_1 return description
+        """

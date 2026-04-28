@@ -1,0 +1,3 @@
+========== Test: fake_bpy_module_test.generator_test.SortedEntryPointNodesTest.test_base_class_dependency ==========
+========== Test: fake_bpy_module_test.generator_test.SortedEntryPointNodesTest.test_basic ==========
+========== Test: fake_bpy_module_test.generator_test.SortedEntryPointNodesTest.test_high_priority_class ==========

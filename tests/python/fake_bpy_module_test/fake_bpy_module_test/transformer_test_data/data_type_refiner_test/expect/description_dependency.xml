@@ -1,0 +1,58 @@
+<document source="<string>">
+    <source-filename>
+        description_dependency.rst
+    <module>
+        <name>
+            module_1
+        <description>
+    <class>
+        <name>
+            ClassA
+        <description>
+        <base-class-list>
+        <attribute-list>
+        <function-list>
+            <function function_type="method">
+                <name>
+                    method_1
+                <description>
+                <argument-list>
+                <return>
+                    <description>
+                        An instance of this object.
+                    <data-type-list>
+            <function function_type="method">
+                <name>
+                    method_2
+                <description>
+                <argument-list>
+                    <argument argument_type="arg">
+                        <name>
+                            arg_1
+                        <description>
+                            Enumerator in `rna_enum_example`.
+                        <default-value>
+                        <data-type-list>
+                            <data-type>
+                                set
+                    <argument argument_type="arg">
+                        <name>
+                            arg_2
+                        <description>
+                            job type in `rna_enum_example`.
+                        <default-value>
+                        <data-type-list>
+                            <data-type>
+                                method_2 arg_2 type
+                    <argument argument_type="arg">
+                        <name>
+                            arg_3
+                        <description>
+                            Enumerator in `rna_enum_example`.
+                        <default-value>
+                        <data-type-list>
+                            <data-type>
+                                set[str]
+                <return>
+                    <description>
+                    <data-type-list>

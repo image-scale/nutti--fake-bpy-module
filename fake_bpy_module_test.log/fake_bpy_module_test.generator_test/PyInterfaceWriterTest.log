@@ -1,0 +1,323 @@
+========== Test: fake_bpy_module_test.generator_test.PyInterfaceWriterTest.test_children ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/py_interface_writer_test/expect/children/module_1.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+from . import submodule_1 as submodule_1
+
+DATA_1: submodule_1.ClassA
+""" DATA_1 description
+"""
+
+============= Actual: fake_bpy_module_test_tmp/py_interface_writer_test_output.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+from . import submodule_1 as submodule_1
+
+DATA_1: submodule_1.ClassA
+""" DATA_1 description
+"""
+
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/py_interface_writer_test/expect/children/module_1.submodule_1.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+============= Actual: fake_bpy_module_test_tmp/py_interface_writer_test_output.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+========== Test: fake_bpy_module_test.generator_test.PyInterfaceWriterTest.test_class ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/py_interface_writer_test/expect/class/class.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+class ClassA:
+    """ClassA description"""
+
+    attr_1: float
+    """ attr_1 description"""
+
+    data_1: int
+    """ data_1 description"""
+
+    def method_1(self, arg_1: float, arg_2: str = "test") -> str:
+        """method_1 description
+
+        :param arg_1: method_1 arg_1 description
+        :param arg_2: method_1 arg_2 description
+        :return: method_1 return description
+        """
+
+    @classmethod
+    def classmethod_1(cls, arg_1: float, arg_2: int = 123) -> str:
+        """classmethod_1 description
+
+        :param arg_1: classmethod_1 arg_1 description
+        :param arg_2: classmethod_1 arg_2 description
+        :return: classmethod_1 return description
+        """
+
+    @staticmethod
+    def staticmethod_1(arg_1: float, arg_2: tuple = (0, 0)) -> str:
+        """staticmethod_1 description
+
+        :param arg_1: staticmethod_1 arg_1 description
+        :param arg_2: staticmethod_1 arg_2 description
+        :return: staticmethod_1 return description
+        """
+
+    @typing.overload
+    def function_1(self, arg_1: float, arg_2: int) -> str | None:
+        """function_1 description
+
+        :param arg_1: function_1 arg_1 description
+        :param arg_2: function_1 arg_2 description
+        :return: function_1 return description
+        """
+
+class ClassB[_GenericType1]:
+    """ClassB description"""
+
+    attr_1: _GenericType1
+    """ attr_1 description"""
+
+    @property
+    def attr_2(self) -> int | None:
+        """attr_2 description"""
+
+    def method_1[_GenericType2](
+        self, arg_1: _GenericType1, arg_2: _GenericType2
+    ) -> _GenericType2:
+        """method_1 description
+
+        :param arg_1: method_1 arg_1 description
+        :param arg_2: method_1 arg_2 description
+        :return: method_1 return description
+        """
+
+============= Actual: fake_bpy_module_test_tmp/py_interface_writer_test_output.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+class ClassA:
+    """ClassA description"""
+
+    attr_1: float
+    """ attr_1 description"""
+
+    data_1: int
+    """ data_1 description"""
+
+    def method_1(self, arg_1: float, arg_2: str = "test") -> str:
+        """method_1 description
+
+        :param arg_1: method_1 arg_1 description
+        :param arg_2: method_1 arg_2 description
+        :return: method_1 return description
+        """
+
+    @classmethod
+    def classmethod_1(cls, arg_1: float, arg_2: int = 123) -> str:
+        """classmethod_1 description
+
+        :param arg_1: classmethod_1 arg_1 description
+        :param arg_2: classmethod_1 arg_2 description
+        :return: classmethod_1 return description
+        """
+
+    @staticmethod
+    def staticmethod_1(arg_1: float, arg_2: tuple = (0, 0)) -> str:
+        """staticmethod_1 description
+
+        :param arg_1: staticmethod_1 arg_1 description
+        :param arg_2: staticmethod_1 arg_2 description
+        :return: staticmethod_1 return description
+        """
+
+    @typing.overload
+    def function_1(self, arg_1: float, arg_2: int) -> str | None:
+        """function_1 description
+
+        :param arg_1: function_1 arg_1 description
+        :param arg_2: function_1 arg_2 description
+        :return: function_1 return description
+        """
+
+class ClassB[_GenericType1]:
+    """ClassB description"""
+
+    attr_1: _GenericType1
+    """ attr_1 description"""
+
+    @property
+    def attr_2(self) -> int | None:
+        """attr_2 description"""
+
+    def method_1[_GenericType2](
+        self, arg_1: _GenericType1, arg_2: _GenericType2
+    ) -> _GenericType2:
+        """method_1 description
+
+        :param arg_1: method_1 arg_1 description
+        :param arg_2: method_1 arg_2 description
+        :return: method_1 return description
+        """
+
+========== Test: fake_bpy_module_test.generator_test.PyInterfaceWriterTest.test_data ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/py_interface_writer_test/expect/data/data.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+DATA_1: int
+""" DATA_1 description
+"""
+
+============= Actual: fake_bpy_module_test_tmp/py_interface_writer_test_output.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+DATA_1: int
+""" DATA_1 description
+"""
+
+========== Test: fake_bpy_module_test.generator_test.PyInterfaceWriterTest.test_dependencies ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/py_interface_writer_test/expect/dependencies/dependencies.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+import module_2
+
+DATA_1: module_2.ClassA
+""" DATA_1 description
+"""
+
+============= Actual: fake_bpy_module_test_tmp/py_interface_writer_test_output.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+import module_2
+
+DATA_1: module_2.ClassA
+""" DATA_1 description
+"""
+
+========== Test: fake_bpy_module_test.generator_test.PyInterfaceWriterTest.test_deprecated ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/py_interface_writer_test/expect/deprecated/deprecated.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+def function_1(arg_1) -> None:
+    """(Deprecated)"""
+
+DATA_1: typing.Any
+""" (Deprecated)
+"""
+
+============= Actual: fake_bpy_module_test_tmp/py_interface_writer_test_output.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+def function_1(arg_1) -> None:
+    """(Deprecated)"""
+
+DATA_1: typing.Any
+""" (Deprecated)
+"""
+
+========== Test: fake_bpy_module_test.generator_test.PyInterfaceWriterTest.test_enum ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/py_interface_writer_test/expect/enum/enum.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+type EnumA = typing.Literal[
+    "ENUM_ITEM_1",  # ENUM_ITEM_1 description
+]
+
+============= Actual: fake_bpy_module_test_tmp/py_interface_writer_test_output.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+type EnumA = typing.Literal[
+    "ENUM_ITEM_1",  # ENUM_ITEM_1 description
+]
+
+========== Test: fake_bpy_module_test.generator_test.PyInterfaceWriterTest.test_function ==========
+============= Expect: /workspace/fake-bpy-module/tests/python/fake_bpy_module_test/fake_bpy_module_test/generator_test_data/py_interface_writer_test/expect/function/function.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+def function_1(arg_1: float, arg_2: str = "test", arg_3: int = 1234) -> str:
+    """function_1 description
+
+    :param arg_1: function_1 arg_1 description
+    :param arg_2: function_1 arg_2 description
+    :param arg_3: function_1 arg_3 description
+    :return: function_1 return description
+    """
+
+def function_2() -> str | None:
+    """
+
+    :return: function_2 return description
+    """
+
+def function_3[_GenericType1]() -> _GenericType1:
+    """
+
+    :return: function_3 return description
+    """
+
+============= Actual: fake_bpy_module_test_tmp/py_interface_writer_test_output.pyi =============
+import typing
+import collections.abc
+import typing_extensions
+import numpy.typing as npt
+
+def function_1(arg_1: float, arg_2: str = "test", arg_3: int = 1234) -> str:
+    """function_1 description
+
+    :param arg_1: function_1 arg_1 description
+    :param arg_2: function_1 arg_2 description
+    :param arg_3: function_1 arg_3 description
+    :return: function_1 return description
+    """
+
+def function_2() -> str | None:
+    """
+
+    :return: function_2 return description
+    """
+
+def function_3[_GenericType1]() -> _GenericType1:
+    """
+
+    :return: function_3 return description
+    """
+
